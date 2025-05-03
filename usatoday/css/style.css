@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -77,10 +77,6 @@ a {
     color: darkslategray;
 }
 
-.body{
-    background: #f8f8f8;
-}
-
 #main-content {
     display: flex;
     background: white;
@@ -90,11 +86,7 @@ a {
     padding-right: 65px;
     max-width: 1000px;
     margin: auto;
-    font-family: Arial, sans-serif;
-}
-
-#more-articles {
-
+    font-family: "Roboto", sans-serif;
 }
 
 #featured-article {
@@ -129,6 +121,7 @@ a {
     color: #444;
     max-width: 85%;
     line-height: 1.5;
+    font-family: "Lora", serif;
 }
 
 #secondary-articles .headline-box h3 {
@@ -148,6 +141,7 @@ a {
     gap: 20px;
 }
 
+/*
 .sidebar {
     flex: 1;
     display: flex;
@@ -155,14 +149,15 @@ a {
     width: 40px;
     gap: 20px;
 }
+*/
 
-.article {
+.sarticle {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.article img {
+.sarticle img {
     width: 100%;
     height: auto;
     border-radius: 6px;
@@ -197,12 +192,13 @@ a {
     padding: 40px 0;
     gap: 30px;
     margin: 50px auto;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background: #f8f8f8;
 }
 
 #more-articles .Advertisement {
     display: flex;
+    flex-direction: column;
     max-width: 1000px;
     height: auto;
     margin: 0 auto;
@@ -216,7 +212,7 @@ a {
     border-radius: 6px;
 }
 
-.column-wrapper {
+#column-wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -252,7 +248,7 @@ a {
     gap: 25px;
 }
 
-.column-wrapper .Advertisement {
+#column-wrapper .Advertisement {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -299,6 +295,12 @@ a {
     gap: 16px;
 }
 
+.section-header img{
+    width: 24px;
+    height: 12px;
+    align-self: center;
+}
+
 .section-header h2 {
     font-size: 18px;
     font-weight: bold;
@@ -306,8 +308,8 @@ a {
 }
 
 .arrow-icon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-left: auto;
 }
 
@@ -322,7 +324,7 @@ a {
 .other-news{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
 }
 
@@ -388,7 +390,7 @@ a {
 }
 
 .news-list h3 {
-    font-size: clamp(8px, 5vw, 12px);
+    font-size: 12px;
 }
 
 .other-news-footer{
@@ -401,10 +403,6 @@ a {
 .other-news-footer p{
     padding-left: 10px;
 }
-
-
-
-
 
 #footer{
     display: flex;
@@ -429,7 +427,6 @@ a {
     color: dimgray;
 }
 
-
 #footer p{
     font-size: 15px;
     color: dimgray;
@@ -445,7 +442,6 @@ a {
 
 
 /* Responsive Design */
-/* TO DO */
 @media (max-width: 1050px) {
     #Crossword {
         display: none;
@@ -517,6 +513,10 @@ a {
 }
 
 @media (max-width: 640px) {
+    #navbar {
+        padding-left: 20px;
+    }
+
     #navbar .menu {
         display: none;
     }
@@ -524,6 +524,14 @@ a {
     #main-content{
         display: flex;
         flex-direction: column;
+    }
+
+    .news-list h3 {
+        font-size: 2px;
+    }
+
+    .column-right .Article h3 {
+        font-size: 16px;
     }
 
     #featured-article {
@@ -535,6 +543,10 @@ a {
 @media (max-width: 900px) {
     #side-articles {
         display: none;
+    }
+
+    .section-header{
+        padding-left: 5px;
     }
 
     .column-right {
