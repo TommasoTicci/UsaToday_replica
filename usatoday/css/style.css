@@ -440,6 +440,96 @@ a {
     gap: 20px;
 }
 
+/* Sfondo generale del menu */
+.offcanvas {
+    background-color: #ffffff; /* Bianco */
+    color: #212529; /* Grigio scuro (quasi nero) */
+    padding: 30px 60px;
+}
+
+#offcanvasMenu {
+    width: clamp(430px, 50vw, 800px);
+}
+
+.offcanvas .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.offcanvas .menu span {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.offcanvas .menu span img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.offcanvas a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #212529;
+    text-decoration: none;
+    border-bottom: 1px solid #eee; /* Linea sottile tra voci */
+}
+
+.offcanvas a:hover {
+    background-color: #f8f9fa; /* Grigio chiarissimo */
+    color: #0d6efd; /* Blu acceso di Bootstrap */
+}
+
+.offcanvas-extra a:hover {
+    color: inherit; /* Blu acceso di Bootstrap */
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Bottone di chiusura (X) */
+.btn-close {
+    width: 1em;
+    height: 1em;
+    background-size: 1em;
+    background: none;
+    opacity: 0.7;
+}
+
+#close-button {
+    width: 1em;
+    height: 1em;
+}
+
+/* Overlay scuro dietro il menu */
+.offcanvas-backdrop.show {
+    opacity: 0.7;
+    background-color: #000000;
+}
+
+.offcanvas-extra {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.offcanvas-extra h5 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.offcanvas-extra h6 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.offcanvas-extra p {
+    font-weight: normal;
+    font-size: 14px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 1050px) {
@@ -463,6 +553,26 @@ a {
         width: 100%;
         height: auto;
         max-width: 350px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #side-articles {
+        display: none;
+    }
+
+    .section-header{
+        padding-left: 5px;
+    }
+
+    .column-right {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .column-left {
+        display: none;
     }
 }
 
@@ -538,23 +648,9 @@ a {
         flex: 2;
         max-width: 500px;
     }
-}
 
-@media (max-width: 900px) {
-    #side-articles {
-        display: none;
-    }
-
-    .section-header{
-        padding-left: 5px;
-    }
-
-    .column-right {
-        flex: 1;
-        max-width: 100%;
-    }
-
-    .column-left {
-        display: none;
+    .offcanvas {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
