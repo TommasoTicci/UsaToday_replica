@@ -14,7 +14,7 @@ a {
     color: inherit;
 }
 
-/* NAVBAR fissa in alto */
+/* NAVBAR FISSA IN ALTO */
 #navbar {
     position: fixed;
     top: 0;
@@ -28,14 +28,6 @@ a {
     z-index: 999;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-
-/*
-.navbar .header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-*/
 
 #navbar .hamburger {
     display: flex;
@@ -77,6 +69,7 @@ a {
     color: darkslategray;
 }
 
+/* CONTENUTO PRINCIPALE */
 #main-content {
     display: flex;
     background: white;
@@ -141,16 +134,6 @@ a {
     gap: 20px;
 }
 
-/*
-.sidebar {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    width: 40px;
-    gap: 20px;
-}
-*/
-
 .sarticle {
     display: flex;
     flex-direction: column;
@@ -185,6 +168,7 @@ a {
     color: #000;
 }
 
+/* ARTICOLI DOPO L'INTESTAZIONE */
 #more-articles {
     width: 100%;
     display: flex;
@@ -221,6 +205,7 @@ a {
     width: 100%;
 }
 
+/* COLONNA DI SINISTRA (pubblicità) */
 .column-left {
     flex: 1;
     display: flex;
@@ -230,6 +215,7 @@ a {
     background: white;
 }
 
+/* COLONNA DI DESTRA (notizie) */
 .column-right {
     flex: 1;
     display: flex;
@@ -239,6 +225,7 @@ a {
     gap: 30px;
 }
 
+/* Primo elenco di notizie della colonna di destra */
 .first-news {
     display: flex;
     background: white;
@@ -321,6 +308,7 @@ a {
     background: white;
 }
 
+/* Altra sezione di notizie divise per categoria */
 .other-news{
     display: flex;
     flex-direction: column;
@@ -404,6 +392,7 @@ a {
     padding-left: 10px;
 }
 
+/* FOOTER DELLA PAGINA */
 #footer{
     display: flex;
     flex-direction: column;
@@ -440,7 +429,7 @@ a {
     gap: 20px;
 }
 
-/* Sfondo generale del menu */
+/* MENU LATERALE */
 .offcanvas {
     background-color: #ffffff; /* Bianco */
     color: #212529; /* Grigio scuro (quasi nero) */
@@ -473,23 +462,23 @@ a {
     font-weight: bold;
     color: #212529;
     text-decoration: none;
-    border-bottom: 1px solid #eee; /* Linea sottile tra voci */
+    border-bottom: 1px solid #eee;
 }
 
 .offcanvas a:hover {
-    background-color: #f8f9fa; /* Grigio chiarissimo */
-    color: #0d6efd; /* Blu acceso di Bootstrap */
+    background-color: #f8f9fa;
+    color: #0d6efd;
 }
 
 .offcanvas-extra a:hover {
-    color: inherit; /* Blu acceso di Bootstrap */
+    color: inherit;
 }
 
 .offcanvas-header {
     border-bottom: 1px solid #ddd;
 }
 
-/* Bottone di chiusura (X) */
+/* Bottone di chiusura (X) del menu laterale */
 .btn-close {
     width: 1em;
     height: 1em;
@@ -515,12 +504,12 @@ a {
     padding-top: 40px;
 }
 
-.offcanvas-extra h5 {
+.offcanvas-extra h4 {
     font-weight: bold;
     font-size: 16px;
 }
 
-.offcanvas-extra h6 {
+.offcanvas-extra h5 {
     font-weight: bold;
     font-size: 14px;
 }
@@ -531,7 +520,7 @@ a {
 }
 
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 @media (max-width: 1050px) {
     #Crossword {
         display: none;

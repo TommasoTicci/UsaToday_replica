@@ -22,11 +22,13 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
 
 
 <body>
+    <h1 class="visually-hidden">Usa Today Replica: find all the news from the U.S.</h1>
     <!-- Barra di navigazione fissa in alto -->
     <nav id="navbar">
         <div class="hamburger">
             <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" ></i>
+                <span class="visually-hidden">Toggle navigation</span>
             </button>
         </div>
         <div id="logo">
@@ -114,7 +116,7 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
         </a>
 
         <div id="column-wrapper">
-            <!--  Colonna delle pubblicità -->
+            <!--  Colonna di sinistra delle pubblicità -->
             <div class="column-left">
                 <a href="#" class="Advertisement">
                     <p>Advertisement</p>
@@ -137,6 +139,7 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
                 </a>
             </div>
 
+            <!--  Colonna di sinistra delle notizie -->
             <div class="column-right">
                 <!--  Elenco di vari articoli -->
                 <div class="first-news">
@@ -382,13 +385,14 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
             <a href=""><img src="https://placehold.co/24x24" alt="LinkedIn" /></a>
             <a href=""><img src="https://placehold.co/24x24" alt="Pinterest" /></a>
         </div>
-        <p>&copy; 2025 Ticci Tommaso. All rights reserved.</p>
+        <p>2025 - Ticci Tommaso. Usa Today Replica.</p>
     </div>
     </div>
 
     <!--  Menu laterale (apribile con il pulsante hamburger) -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
+            <h5 class="visually-hidden" id="offcanvasMenuLabel">Menu</h5>
             <img src="https://placehold.co/110x45" alt="Logo"/>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img src="imgs/close_button.svg" id="close-button" alt="Close"/></button>
         </div>
@@ -406,13 +410,13 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
                 <span><a href="#" class="nav-link">Crossword</a></span>
             </div>
             <div class="offcanvas-extra">
-                <h5>MOST RECENT STORIES</h5>
+                <h4>MOST RECENT STORIES</h4>
                 <a href="#" class="Article">
-                    <h6>Horoscope</h6>
+                    <h5>Horoscope</h5>
                     <p class="meta">Nulla gravida lacinia maximus. Suspendisse mauris urna.</p>
                 </a>
                 <a href="#" class="Article">
-                    <h6>Voices</h6>
+                    <h5>Voices</h5>
                     <p class="meta">Nulla gravida lacinia maximus. Suspendisse mauris urna.</p>
                 </a>
             </div>
