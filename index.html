@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>UsaToday</title>
@@ -49,10 +49,10 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
         </div>
     </nav>
 
-<div class="main">
-    <div id="main-content">
+    <div class="main">
+    <div class="main-content">
         <!--  Articolo in evidenza -->
-        <div id="featured-article">
+        <div class="featured-article">
             <a href="#" class="Article">
             <img src="https://placehold.co/420x236/png" alt="Featured article image" />
             <div class="headline-box">
@@ -65,12 +65,12 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
         </div>
 
         <!--  Articoli secondari con immagini -->
-        <div id="secondary-articles">
+        <div class="secondary-articles">
             <div class="sarticle">
                 <a href="#" class="Article">
                 <img src="https://placehold.co/260x146/png" alt="Article 1 image" />
                 <div class="headline-box">
-                    <h3>Aenean eu mattis sem, eget feugiat libero. Sed pretium, augue.</h3>
+                    <h3>Aenean eu mattis sem, eget feugiat libero. Sed pretium, augue. Donec gravida scelerisque pellentesque.</h3>
                 </div>
                 </a>
             </div>
@@ -86,7 +86,7 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
         </div>
 
         <!--  Articoli senza immagini laterali -->
-        <div id="side-articles">
+        <div class="side-articles">
             <a href="#" class="Article">
                 <h3>Nulla gravida lacinia maximus. Suspendisse mauris urna, ultricies vel erat sed.</h3>
                 <p class="meta">Politics | 00 minutes ago</p>
@@ -109,15 +109,20 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
         </div>
     </div>
 
-    <div id="more-articles">
+    <div class="more-articles">
         <a href="#" class="Advertisement">
             <p>Advertisement</p>
             <img src="https://placehold.co/1000x250/orange/white/png" alt="Big Advertisement" />
         </a>
 
-        <div id="column-wrapper">
+        <div class="column-wrapper">
             <!--  Colonna di sinistra delle pubblicità -->
             <div class="column-left">
+                <a href="#" id="feedback">
+                    <img src="imgs/feedback.png" alt="Share your feedback to help improve our website!" />
+                </a>
+
+                <div class="advertisement-column">
                 <a href="#" class="Advertisement">
                     <p>Advertisement</p>
                     <img src="https://placehold.co/300/orange/white/png" alt="Advertisement 1" />
@@ -137,9 +142,10 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
                     <p>Advertisement</p>
                     <img src="https://placehold.co/300/orange/white/png" alt="Advertisement 4" />
                 </a>
+                </div>
             </div>
 
-            <!--  Colonna di sinistra delle notizie -->
+            <!--  Colonna di destra delle notizie -->
             <div class="column-right">
                 <!--  Elenco di vari articoli -->
                 <div class="first-news">
@@ -347,6 +353,12 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
                         </a>
                     </div>
                 </div>
+
+                <!--
+                    NEL  SITO ORIGINALE CI SAREBBERO ALTRE SEZIONE DEL TIPO "other-news", MA ESSENDO TUTTE UGUALI HO DECISO DI
+                    NON INSERIRLE TUTTE, MA SOLO DUE PER NON CREARE UN CODICE ECCESSIVAMENTE LUNGO E RIPETITIVO
+                -->
+
             </div>
         </div>
 
@@ -387,7 +399,7 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
         </div>
         <p>2025 - Ticci Tommaso. Usa Today Replica.</p>
     </div>
-    </div>
+    </div> <!-- chiusura div main: sarebbe tutto da indentare di un Tab -->
 
     <!--  Menu laterale (apribile con il pulsante hamburger) -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
@@ -396,6 +408,10 @@ ELABORATO FRONT-END PER IL CORSO PPM - Anno 2025 - Studente: Ticci Tommaso - Sit
             <img src="https://placehold.co/110x45" alt="Logo"/>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img src="imgs/close_button.svg" id="close-button" alt="Close"/></button>
         </div>
+        <form onsubmit="return false" id="searchbar-box">
+            <input type="search" id="searchbar" placeholder="What do you want to find?">
+            <button type="submit" id="searchbutton"><img src="imgs/search_button.svg" id="search_icon" alt="Search"/></button>
+        </form>
         <div class="offcanvas-body">
             <div class="menu">
                 <span><a href="#" class="nav-link">U.S.</a> <img src="imgs/right-arrow.svg" class="arrow-icon" alt=""/></span>
